@@ -1,3 +1,8 @@
+# Yul-arious
+
+Small repo to vibe with yul, will maybe become an educational series of articles
+
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
