@@ -5,10 +5,14 @@ contract Counter {
     uint256 public number;
 
     function setNumber(uint256 newNumber) public {
-        number = newNumber;
+        assembly {
+            sstore(0, newNumber)
+        }
     }
 
     function increment() public {
-        number++;
+        assembly {
+            sstore(0, add(sload(0), 1))
+        }
     }
 }
